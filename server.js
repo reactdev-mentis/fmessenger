@@ -2,7 +2,7 @@ const express = require('express');
 const http = require('http');
 const path = require('path');
 let app = express();
-app.use(express.static(path.join(root, 'build')));
+app.use(express.static(path.join('root', 'build')));
 const port = process.env.PORT || '8080';
 app.set('port', port);
 const server = http.createServer(app);
